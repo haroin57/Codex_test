@@ -1,0 +1,10 @@
+{
+  "name": "codex-docs-mock",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local mock of Codex IDE docs page with a simple Node backend",
+  "scripts": {
+    "start": "node server/index.js"
+  }
+}
+

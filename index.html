@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex IDE — Set up the extension</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <div class="brand">
+          <button class="icon-button only-mobile" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+          <a href="#" class="brand__logo">OpenAI Developers</a>
+          <span class="brand__section">/ Codex</span>
+        </div>
+        <div class="topbar__tools">
+          <div class="searchbox">
+            <input class="search" id="searchInput" type="search" placeholder="Search docs" aria-label="Search" autocomplete="off" />
+            <div class="search-results" id="searchResults" role="listbox" aria-label="Search results" hidden></div>
+          </div>
+          <button class="icon-button" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌗</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar" aria-label="Primary">
+        <nav class="nav">
+          <div class="nav__group">
+            <div class="nav__title">Codex</div>
+            <a class="nav__link" href="#overview">Overview</a>
+            <a class="nav__link active" href="#set-up-the-extension">Set up the extension</a>
+            <a class="nav__link" href="#usage">Using in the IDE</a>
+            <a class="nav__link" href="#troubleshooting">Troubleshooting</a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="content" id="main">
+        <div class="breadcrumbs">Codex / IDE</div>
+        <h1 id="set-up-the-extension">Set up the extension</h1>
+        <p class="lead">
+          Install the OpenAI Codex extension in your IDE and connect it to your account.
+        </p>
+
+        <h2 id="requirements">Requirements</h2>
+        <ul>
+          <li>VS Code 1.60+ (or a compatible IDE)</li>
+          <li>An OpenAI API key</li>
+          <li>Internet connectivity</li>
+        </ul>
+
+        <h2 id="installation">Installation</h2>
+        <ol>
+          <li>Open the extensions panel in VS Code.</li>
+          <li>Search for <strong>OpenAI Codex</strong>.</li>
+          <li>Click <strong>Install</strong> and then <strong>Reload</strong> if prompted.</li>
+        </ol>
+
+        <div class="codeblock" data-lang="bash">
+          <div class="codeblock__header">
+            <span class="codeblock__lang">Shell</span>
+            <button class="copy" data-copy aria-label="Copy code">Copy</button>
+          </div>
+          <pre><code>$ code --install-extension openai.codex
+$ code --list-extensions | findstr codex
+openai.codex
+</code></pre>
+        </div>
+
+        <h2 id="authentication">Authentication</h2>
+        <p>
+          After installation, open the Command Palette and run
+          <em>Codex: Sign in</em>. Paste your API key when prompted.
+        </p>
+
+        <div class="codeblock" data-lang="json">
+          <div class="codeblock__header">
+            <span class="codeblock__lang">Settings</span>
+            <button class="copy" data-copy aria-label="Copy code">Copy</button>
+          </div>
+          <pre><code>{
+  "openai.apiKey": "sk-...",
+  "codex.suggestions.enabled": true,
+  "codex.inlineCompletions": "on"
+}
+</code></pre>
+        </div>
+
+        <h2 id="next-steps">Next steps</h2>
+        <ul>
+          <li>Trigger inline completions by typing or pressing <code>Ctrl+Space</code>.</li>
+          <li>Open the Codex panel to view suggestions and examples.</li>
+          <li>Visit the IDE usage guide for advanced tips.</li>
+        </ul>
+
+        <hr />
+        <p class="note">
+          This page is a local replica for demo purposes and is not affiliated with the original site.
+        </p>
+      </main>
+
+      <aside class="toc only-desktop" aria-label="Table of contents">
+        <div class="toc__title">On this page</div>
+        <a class="toc__link" href="#requirements">Requirements</a>
+        <a class="toc__link" href="#installation">Installation</a>
+        <a class="toc__link" href="#authentication">Authentication</a>
+        <a class="toc__link" href="#next-steps">Next steps</a>
+      </aside>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+  </html>

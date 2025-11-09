@@ -1,0 +1,27 @@
+[
+  {
+    "id": "req",
+    "title": "Requirements",
+    "path": "#requirements",
+    "body": "VS Code 1.60+ (or a compatible IDE), an OpenAI API key, and internet connectivity are required to use the Codex extension."
+  },
+  {
+    "id": "install",
+    "title": "Installation",
+    "path": "#installation",
+    "body": "Open the extensions panel in VS Code, search for OpenAI Codex, click Install, and Reload if prompted. Alternatively, use the command line to install the extension."
+  },
+  {
+    "id": "auth",
+    "title": "Authentication",
+    "path": "#authentication",
+    "body": "After installation, run Codex: Sign in from the Command Palette and paste your API key when prompted."
+  },
+  {
+    "id": "next",
+    "title": "Next steps",
+    "path": "#next-steps",
+    "body": "Trigger inline completions by typing or pressing Ctrl+Space, open the Codex panel to view suggestions, and visit the IDE usage guide for advanced tips."
+  }
+]
+
